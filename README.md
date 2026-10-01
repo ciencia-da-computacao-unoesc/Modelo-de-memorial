@@ -153,5 +153,5 @@ Uso livre.
 
 \---
 
-**Última atualização:** Fevereiro/2026
+**Última atualização:** Outubro/2026
 
