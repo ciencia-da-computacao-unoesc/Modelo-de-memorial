@@ -1,0 +1,171 @@
+\newif\ifminuta
+\minutatrue
+%\minutafalse
+\documentclass{classes/relatorio}
+
+% ==================================================
+% CONFIGURAÇÕES DO CABEÇALHO E RODAPÉ
+% ==================================================
+\logo{img/logo.png}  % Caminho para a logo
+\superior{UNOESC - Campus Maravilha}
+\curso{CIÊNCIA DA COMPUTAÇÃO}
+\nome{NATAN OGLIARI}
+
+\titulo{Memorial Descritivo}
+
+% ==================================================
+% INÍCIO DO DOCUMENTO
+% ==================================================
+\begin{document}
+
+% ==================================================
+% INTRODUÇÃO
+% ==================================================
+
+
+\section{Introdução}
+
+A introdução deve apresentar o tema do relatório de forma clara e objetiva, contextualizando o leitor sobre o assunto que será abordado. É importante que sejam estabelecidos os objetivos do trabalho e a justificativa para sua realização.
+
+Este documento foi estruturado seguindo as normas da ABNT (Associação Brasileira de Normas Técnicas) para trabalhos acadêmicos, garantindo padronização e qualidade na apresentação dos resultados.
+
+\subsection{Objetivos}
+
+\subsubsection{Objetivo Geral}
+
+Apresentar um modelo de relatório técnico formatado segundo as normas ABNT, facilitando a elaboração de documentos acadêmicos.
+
+\subsubsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Demonstrar a estrutura básica de um relatório;
+    \item Apresentar exemplos de citações e referências;
+    \item Ilustrar o uso de figuras, tabelas e códigos.
+\end{itemize}
+
+% ==================================================
+% DESENVOLVIMENTO
+% ==================================================
+\section{Desenvolvimento}
+
+O desenvolvimento é a parte principal do relatório, onde são apresentados os dados, análises, resultados e discussões pertinentes ao tema abordado.
+
+\subsection{Fundamentação Teórica}
+
+A composição tipográfica de documentos técnicos requer atenção especial aos detalhes de formatação e estruturação do texto.
+
+Destaca a importância de sistemas de preparação de documentos que permitam ao autor focar no conteúdo, enquanto o sistema cuida da formatação.
+
+\subsection{Metodologia}
+
+A metodologia descreve os procedimentos utilizados para a realização do trabalho. Pode incluir descrição de experimentos, coleta de dados, ferramentas utilizadas, entre outros aspectos relevantes.
+
+\subsection{Resultados}
+
+\subsubsection{Figuras}
+
+As figuras devem ser inseridas no texto com legendas descritivas, conforme exemplo da Figura \ref{fig:exemplo}.
+
+\begin{figure}[h]
+    \centering
+    \caption{Exemplo de legenda de figura}
+    \includegraphics[width=0.6\textwidth]{img/logo.png}
+    \label{fig:exemplo}
+
+    {\fontsize{10pt}{\baselineskip}\selectfont
+   Fonte: O autor (2026)}
+\end{figure}
+
+\subsubsection{Tabelas}
+
+As tabelas seguem o padrão ABNT, com bordas superiores e inferiores, conforme Tabela \ref{tab:exemplo}.
+
+\begin{table}[h]
+    \centering
+    \caption{Exemplo de tabela formatada segundo ABNT}
+    \label{tab:exemplo}
+    \begin{tabular}{lcc}
+        \hline
+        \textbf{Item} & \textbf{Valor 1} & \textbf{Valor 2} \\
+        \hline
+        Linha 1 & 10,5 & 20,3 \\
+        Linha 2 & 15,7 & 18,9 \\
+        Linha 3 & 12,3 & 22,1 \\
+        \hline
+    \end{tabular}
+    
+    {\fontsize{10pt}{\baselineskip}\selectfont
+   Fonte: O autor (2026)}
+\end{table}
+
+\subsubsection{Códigos}
+
+Códigos-fonte podem ser inseridos diretamente ou importados de arquivos externos, como demonstrado no Código \ref{cod:python}.
+
+\lstinputlisting[language=Python, caption=Exemplo de código Python, label=cod:python]{cod/exemplo.py}
+
+Alternativamente, códigos curtos podem ser inseridos inline:
+
+\begin{lstlisting}[language=Python, caption=Código inline]
+def funcao_exemplo(x, y):
+    return x + y
+
+resultado = funcao_exemplo(5, 3)
+print(f"Resultado: {resultado}")
+\end{lstlisting}
+
+\subsubsection{Níveis de Maturidade Tecnológica (TRL)}
+
+A escala TRL (Technology Readiness Levels) é utilizada para avaliação de uma tecnologia de acordo com seu grau de desenvolvimento. Permite o acompanhamento de ativos tecnológicos durante os processos de pesquisa, desenvolvimento e validação, indicando o quão pronto se encontra um produto em sua escala de desenvolvimento.
+
+\begin{table}[H]
+    \centering
+    \caption{Níveis de Maturidade Tecnológica (TRL)}
+    \label{tab:trl}
+    \small
+    \begin{tabular}{p{1.5cm}p{2.5cm}p{7.5cm}}
+        \hline
+        \textbf{Nível} & \textbf{Definição Sintética} & \textbf{Descrição} \\
+        \hline
+        TRL 1 & Ideação & Princípios básicos observados e reportados \\
+        \hline
+        TRL 2 & Concepção & Concepção tecnológica e/ou aplicação formulada \\
+        \hline
+        TRL 3 & Prova de Conceito & Prova de conceitos das funções críticas de forma analítica ou experimental \\
+        \hline
+        TRL 4 & Otimização & Validação em ambiente de laboratório de componentes ou arranjos experimentais básicos \\
+        \hline
+        TRL 5 & Prototipagem & Validação em ambiente relevante de componentes ou arranjos experimentais com configurações físicas finais \\
+        \hline
+        TRL 6 & Escalonamento & Modelo do sistema/subsistema protótipo de demonstrador em ambiente relevante \\
+        \hline
+        TRL 7 & Demonstração em Ambiente Operacional & Protótipo do demonstrador do sistema em ambiente operacional \\
+        \hline
+        TRL 8 & Produção & Sistema completo, testado, qualificado e demonstrado \\
+        \hline
+        TRL 9 & Produção Continuada & Sistema já foi operado em todas as condições, extensão e alcance \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.3cm}
+    {\fontsize{10pt}{\baselineskip}\selectfont
+   Fonte: O autor (2026)}
+\end{table}
+
+% ==================================================
+% CONCLUSÃO
+% ==================================================
+\section{Considerações Finais}
+
+A conclusão deve retomar os objetivos apresentados na introdução e sintetizar os principais resultados obtidos no desenvolvimento do trabalho. É importante que seja concisa e objetiva, destacando as contribuições do estudo e possíveis trabalhos futuros.
+
+Este modelo de relatório demonstrou a aplicação das normas \cite{abntex2013} ABNT para documentos técnicos, fornecendo exemplos práticos de estruturação, citações, figuras, tabelas e códigos-fonte.
+
+% ==================================================
+% REFERÊNCIAS
+% ==================================================
+
+\bibliographystyle{abntex2-alf}
+\bibliography{referencias}
+
+\end{document}
